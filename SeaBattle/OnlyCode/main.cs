@@ -167,6 +167,46 @@ namespace CSharp
 
 		static void PlaceShips(int[,] field)
 		{
+			Console.WriteLine("Выберите способ заполнения поля:");
+			Console.WriteLine("1 - готовое поле 1");
+			Console.WriteLine("2 - готовое поле 2");
+			Console.WriteLine("3 - ручная расстановка");
+			Console.Write("Ваш выбор: ");
+			string choice = Console.ReadLine();
+
+			switch (choice)
+			{
+				case "1":
+					Console.Clear();
+					Console.WriteLine("Используется игровое поле 1\n");
+					int[,] predefinedField1 = CreateField1();
+					CopyField(predefinedField1, field);
+					DrawField(field);
+            		Console.WriteLine("Нажмите любую клавишу, чтобы продолжить");
+            		Console.ReadKey();
+            		Console.Clear();
+					return;
+
+				case "2":
+            		Console.Clear();
+            		Console.WriteLine("Используется готовое поле 2\n");
+            		int[,] predefinedField2 = CreatePredefinedField2();
+            		CopyField(predefinedField2, field);
+            		DrawField(field);
+            		Console.WriteLine("Нажмите любую клавишу, чтобы продолжить");
+            		Console.ReadKey();
+            		Console.Clear();
+					return;
+
+				case "3":
+				default:
+					Console.Clear();
+					DrawField(field);
+					Console.WriteLine("\nРучная расстановка кораблей\n");
+					break;
+			}
+
+
 			string s1;
 			int x, y;
 			bool isOpen = true;
@@ -790,6 +830,58 @@ namespace CSharp
 							}
 						}
 					}
+				}
+			}
+		}
+		static int[,] CreateField1()
+		{
+			int[,] field = new int[10, 10];
+
+			field[2, 2] = 1; field[2, 3] = 1; field[2, 4] = 1; field[2, 5] = 1;
+
+			field[5, 1] = 1; field[6, 1] = 1; field[7, 1] = 1;
+			field[8, 7] = 1; field[8, 8] = 1; field[8, 9] = 1;
+
+			field[0, 0] = 1; field[0, 1] = 1;
+			field[3, 8] = 1; field[4, 8] = 1;
+			field[9, 0] = 1; field[9, 1] = 1;
+
+			field[1, 9] = 1;
+			field[4, 4] = 1;
+			field[6, 6] = 1;
+			field[8, 3] = 1;
+
+			return field;
+		}
+
+		static int[,] CreatePredefinedField2()
+		{
+			int[,] field = new int[10, 10];
+
+			field[1, 5] = 1; field[2, 5] = 1; field[3, 5] = 1; field[4, 5] = 1;
+
+			field[7, 2] = 1; field[7, 3] = 1; field[7, 4] = 1;
+			field[2, 8] = 1; field[3, 8] = 1; field[4, 8] = 1;
+
+			field[0, 0] = 1; field[1, 0] = 1;
+			field[6, 7] = 1; field[6, 8] = 1;
+			field[9, 5] = 1; field[9, 6] = 1;
+
+			field[0, 7] = 1;
+			field[3, 2] = 1;
+			field[6, 0] = 1;
+			field[8, 9] = 1;
+
+			return field;
+		}
+		
+		static void CopyField(int[,] source, int[,] dest)
+		{
+			for (int i = 0; i < 10; i++)
+			{
+				for (int j = 0; j < 10; j++)
+				{
+					dest[i, j] = source[i, j];
 				}
 			}
 		}
