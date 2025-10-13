@@ -26,3 +26,18 @@
 /home/deni/csharp/MyApp/obj/Debug/net8.0/MyApp.pdb
 /home/deni/csharp/MyApp/obj/Debug/net8.0/MyApp.genruntimeconfig.cache
 /home/deni/csharp/MyApp/obj/Debug/net8.0/ref/MyApp.dll
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/bin/Debug/net8.0/MyApp
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/bin/Debug/net8.0/MyApp.deps.json
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/bin/Debug/net8.0/MyApp.runtimeconfig.json
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/bin/Debug/net8.0/MyApp.dll
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/bin/Debug/net8.0/MyApp.pdb
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.AssemblyInfoInputs.cache
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.AssemblyInfo.cs
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.csproj.CoreCompileInputs.cache
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.sourcelink.json
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.dll
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/refint/MyApp.dll
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.pdb
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/MyApp.genruntimeconfig.cache
+/home/deni/csharp/OP/SeaBattle/All (idk)/MyApp/obj/Debug/net8.0/ref/MyApp.dll
