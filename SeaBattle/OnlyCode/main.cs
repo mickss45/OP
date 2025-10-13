@@ -70,7 +70,6 @@ namespace CSharp
 			int[,] fieldEnemy1 = new int[10, 10];
 			int[,] fieldEnemy2 = new int[10, 10];
 
-
 			while (CheckIfGameOver(fieldPlayer1, fieldPlayer2))
 			{
 				Console.SetCursorPosition(30, 0);
@@ -111,6 +110,7 @@ namespace CSharp
 			Console.WriteLine("ИГРА ОКОНЧЕНА!!!\n\n");
 			Console.ResetColor();
 			Console.SetCursorPosition(30, 2);
+			
 			if (WhoWin(fieldPlayer1, fieldPlayer2) == 0)
 			{
 				Console.ForegroundColor = ConsoleColor.Yellow;
@@ -214,7 +214,7 @@ namespace CSharp
 						{
 							Console.Clear();
 							field[x, y] = 1;
-							Console.WriteLine($"Это ваше игрвое поле\n");
+							Console.WriteLine($"Это ваше игровое поле\n");
 							DrawField(field);
 							n += 1;
 						}
@@ -317,7 +317,7 @@ namespace CSharp
 							Console.Clear();
 							field[x1, y1] = 1;
 							field[x2, y2] = 1;
-							Console.WriteLine($"Это ваше игрвое поле\n");
+							Console.WriteLine($"Это ваше игровое поле\n");
 							DrawField(field);
 							n += 1;
 						}
@@ -423,7 +423,7 @@ namespace CSharp
 							field[x1, y1] = 1;
 							field[x2, y2] = 1;
 							field[x3, y3] = 1;
-							Console.WriteLine($"Это ваше игрвое поле\n");
+							Console.WriteLine($"Это ваше игровое поле\n");
 							DrawField(field);
 							n += 1;
 						}
@@ -534,7 +534,7 @@ namespace CSharp
 							field[x2, y2] = 1;
 							field[x3, y3] = 1;
 							field[x4, y4] = 1;
-							Console.WriteLine($"Это ваше игрвое поле\n");
+							Console.WriteLine($"Это ваше игровое поле\n");
 							DrawField(field);
 							n += 1;
 						}
@@ -651,7 +651,7 @@ namespace CSharp
 							if (killed)
 							{
 								MarkAroundShip(enemyField, myEnemyField, x, y);
-								Console.WriteLine("Ваше игровое пол");
+								Console.WriteLine("Ваше игровое поле");
 								DrawField(myField);
 								Console.WriteLine("\nИгровое поле вашего противника");
 								DrawField(myEnemyField);
